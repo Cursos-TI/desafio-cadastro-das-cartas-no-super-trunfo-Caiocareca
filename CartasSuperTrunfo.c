@@ -22,7 +22,7 @@ int main() {
     char Código2 [20]; //Use a letra escolhida seguida de um número de 01 a 04
     char NomeCidade2 [60]; //Nome da cidade
     int População2; //População da cidade
-    float Área2, // Área da cidade em km2
+    float Área2; // Área da cidade em km2
     float PIB2; //Produto interno Bruto da cidade 
     int PontosTurísticos2; //Quantidade de turístas na cidade
 
@@ -36,24 +36,67 @@ int main() {
     scanf("%s", Código1);
 
     printf("Digite o Nome da Cidade: ");
-    scanf("%[^\n]", NomeCidade1);
+    scanf("%[\n]", NomeCidade1);
 
 printf("Digite a População: "); 
-scanf("%d",&População1);
+scanf("%d[\n]",&População1);
 
 printf("Digite a Área (km2): ");
-scanf("%f",%Área1); 
+scanf("%f\n",&Área1); 
 
-print("D9g9te o PIB (bilhões de R$): ");
-scanf("%f", &PIB1):
+printf("Digite o PIB (bilhões de R$): ");
+scanf("%f\n", &PIB1);
 
 printf("Digite a quantidade de pontos turísticos: ");
-scanf("%d", &PontosTurísticos1)
+scanf("%d\n", &PontosTurísticos1);
 
 
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+printf("Cadastro da carta 2\n");
 
-    return 0;
+printf("Digite o Estado (SP): ");
+scanf("%s\n",Estado2);
+
+printf("Digite o Código (ex:A01): ");
+scanf("%s\n", Código2);
+
+printf("Digite o Nome da Cidade: ");
+scanf("%[^\n]", NomeCidade2); 
+
+printf("Digite a População: "); 
+scanf("%d\n",&População2); 
+
+printf("Digite a Área (km2): ");
+scanf("%f\n",&Área2);
+
+printf("Digite o PIB: ");
+scanf("%f\n",&PIB2); 
+
+printf("Digite a quantidade de Pontos Turísticos: "); 
+scanf("%d\n",&PontosTurísticos2); 
+
+
+//Área para exibição dos dados das cartas
+
+printf("\n--- Carta 1 ---\n");
+printf("Estado: %s\n",Estado1);
+printf("Código: %s\n", NomeCidade1);
+printf("População: %d\n",População1);
+printf("Área: %.2f km2\n",Área1);
+printf("PIB: %.2f bilhões de R$\n", PIB1);
+printf("PontosTurísticos: %d\n",PontosTurísticos1); 
+printf("----------");
+
+
+printf("\n--- Carta 2 ---\n");
+printf("REstado: %s\n",Estado2);
+printf("Código: %s\n", Código2);
+printf("Nome da Cidade: %s\n", NomeCidade2); 
+printf("População: %d\n",População2);
+printf("Área: %.2f km2\n",Área2);
+printf("PIB: %.2f bilhões de R$\n",PIB2);
+printf("PontosTurísticos: %d\n",PontosTurísticos2);
+printf("----------");
+
+
+return 0;
 }
