@@ -35,44 +35,43 @@ int main() {
     printf("Digite o Código (ex: A01): ");
     scanf("%s", Código1);
 
-    printf("Digite o Nome da Cidade: ");
-    scanf("%[\n]", NomeCidade1);
+    printf("Digite o Nome da Cidade: \n"); 
+    scanf("%s", NomeCidade1);
 
-printf("Digite a População: "); 
-scanf("%d[\n]",&População1);
+printf("Digite a População: \n"); 
+scanf("%d", &População1);
 
-printf("Digite a Área (km2): ");
-scanf("%f\n",&Área1); 
+printf("Digite a Área (km2): \n");
+scanf("%f", &Área1); 
 
-printf("Digite o PIB (bilhões de R$): ");
-scanf("%f\n", &PIB1);
+printf("Digite o PIB (bilhões de R$): \n");
+scanf("%f", &PIB1);
 
-printf("Digite a quantidade de pontos turísticos: ");
-scanf("%d\n", &PontosTurísticos1);
+printf("Digite a quantidade de pontos turísticos: \n");
+scanf("%d", &PontosTurísticos1);
 
 
 printf("Cadastro da carta 2\n");
+printf("Digite o Estado (SP): \n");
+scanf("%s", Estado2);
 
-printf("Digite o Estado (SP): ");
-scanf("%s\n",Estado2);
+printf("Digite o Código (ex:A01): \n");
+scanf("%s", Código2);
 
-printf("Digite o Código (ex:A01): ");
-scanf("%s\n", Código2);
+printf("Digite o Nome da Cidade: \n");
+scanf("%s", NomeCidade2); 
 
-printf("Digite o Nome da Cidade: ");
-scanf("%[^\n]", NomeCidade2); 
+printf("Digite a População: \n"); 
+scanf("%d", &População2); 
 
-printf("Digite a População: "); 
-scanf("%d\n",&População2); 
+printf("Digite a Área (km2): \n");
+scanf("%f", &Área2);
 
-printf("Digite a Área (km2): ");
-scanf("%f\n",&Área2);
+printf("Digite o PIB: \n");
+scanf("%f", &PIB2); 
 
-printf("Digite o PIB: ");
-scanf("%f\n",&PIB2); 
-
-printf("Digite a quantidade de Pontos Turísticos: "); 
-scanf("%d\n",&PontosTurísticos2); 
+printf("Digite a quantidade de Pontos Turísticos: \n"); 
+scanf("%d", &PontosTurísticos2); 
 
 
 //Área para exibição dos dados das cartas
